@@ -346,14 +346,15 @@
     .sluzba-card {
       background: var(--card);
       border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
       border-radius: var(--radius); overflow: hidden;
       transition: transform .22s, box-shadow .22s, border-color .22s;
     }
-    .sluzba-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,.5); border-color: rgba(225,19,19,.3); }
+    .sluzba-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,.5); border-color: rgba(225,19,19,.3); border-left-color: var(--orange-2); }
     .sluzba-img { height: 160px; overflow: hidden; }
     .sluzba-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
     .sluzba-card:hover .sluzba-img img { transform: scale(1.07); }
-    .sluzba-body { padding: 16px 18px; }
+    .sluzba-body { padding: 26px 24px; }
     .sluzba-tag {
       display: inline-block; font-size: 0.68rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: .1em;
@@ -708,7 +709,6 @@
     <div class="sluzby-grid" id="sluzbyGrid">
 
       <div class="sluzba-card" data-cat="elektro" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_2.jpg" alt="Autoelektrika a diagnostika" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
           <h3>Autoelektrika a diagnostika</h3>
@@ -717,7 +717,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="elektro" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_3.jpg" alt="Alternátory a startéry" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
           <h3>Alternátory a startéry</h3>
@@ -726,7 +725,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_1.jpg" alt="Pravidelná údržba a výměna oleje" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Servis &amp; motory</span>
           <h3>Pravidelná údržba vozidel</h3>
@@ -735,7 +733,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_2.jpg" alt="Opravy a seřízení motorů" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Servis &amp; motory</span>
           <h3>Opravy a seřízení motorů</h3>
@@ -744,7 +741,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="podvozek" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_3.jpg" alt="Podvozek a geometrie" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Podvozek</span>
           <h3>Podvozek a geometrie</h3>
@@ -753,7 +749,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="podvozek" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_1.jpg" alt="Generální opravy náprav Peugeot a Citroën" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Podvozek</span>
           <h3>Nápravy PEUGEOT &amp; CITROËN</h3>
@@ -762,7 +757,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="karos" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_2.jpg" alt="Karoserie a opravy po havárii" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Karoserie</span>
           <h3>Opravy po havárii</h3>
@@ -771,7 +765,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_3.jpg" alt="STK a emise" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Servis &amp; motory</span>
           <h3>Příprava a provedení STK a emisí</h3>
@@ -780,7 +773,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="pneu" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_1.jpg" alt="Pneuservis a klimatizace" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Pneu &amp; klima</span>
           <h3>Pneuservis a klimatizace</h3>
@@ -789,7 +781,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_2.jpg" alt="Dekarbonizace motoru" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Servis &amp; motory</span>
           <h3>Dekarbonizace motoru</h3>
@@ -798,7 +789,6 @@
       </div>
 
       <div class="sluzba-card" data-cat="karos" data-r>
-        <div class="sluzba-img"><img src="../stock_photos/photo_3.jpg" alt="Tažná zařízení" loading="lazy" /></div>
         <div class="sluzba-body">
           <span class="sluzba-tag">Karoserie</span>
           <h3>Tažná zařízení</h3>
