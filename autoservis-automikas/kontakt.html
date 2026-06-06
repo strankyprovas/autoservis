@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt — Autoservis Automikas Kladno</title>
+  <meta name="description" content="Kontakt na autoservis Automikas: Huťská 370, 272 01 Kladno, tel. +420 608 103 999, info@automikas.cz. Otevřeno Po–Pá 8:00–12:00 a 13:00–17:00. Působíme v Kladně a okolí." />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<header id="header">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🔧 <span>Autoservis Automikas</span></a>
+      <nav aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="bazar.html">Bazar</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:+420 608 103 999" class="nav-phone">📞 Zavolat</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Úvod</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="bazar.html">Bazar</a>
+    <a href="index.html#galerie">Galerie</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="tel:+420 608 103 999">📞 +420 608 103 999</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Úvod</a> &nbsp;›&nbsp; Kontakt</div>
+    <h1>Kontakt</h1>
+    <p>Najdete nás v Kladně, v ulici Huťská 370. Zavolejte, napište nebo přijeďte přímo k nám – rádi se o vaše vozidlo postaráme.</p>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="container">
+    <div class="kontakt-grid">
+      <div class="kontakt-info" data-r>
+        <div class="section-label">Rychlý kontakt</div>
+        <h2>Autoservis Automikas</h2>
+        <p>Miroslav Strial – Automikas, nezávislá autoopravna od roku 1994.</p>
+        <div class="kontakt-items">
+          <div class="kontakt-item">
+            <div class="kontakt-icon">📍</div>
+            <div class="kontakt-item-text"><small>Adresa</small><strong>Huťská 370, 272 01 Kladno</strong></div>
+          </div>
+          <div class="kontakt-item">
+            <div class="kontakt-icon">📞</div>
+            <div class="kontakt-item-text"><small>Telefon</small><strong><a href="tel:+420 608 103 999">+420 608 103 999</a></strong></div>
+          </div>
+          <div class="kontakt-item">
+            <div class="kontakt-icon">✉️</div>
+            <div class="kontakt-item-text"><small>Email</small><strong><a href="mailto:info@automikas.cz">info@automikas.cz</a></strong></div>
+          </div>
+          <div class="kontakt-item">
+            <div class="kontakt-icon">🕐</div>
+            <div class="kontakt-item-text"><small>Otevírací doba</small><strong>Po–Pá 8:00–12:00 · 13:00–17:00</strong></div>
+          </div>
+          <div class="kontakt-item">
+            <div class="kontakt-icon">🧭</div>
+            <div class="kontakt-item-text"><small>GPS</small><strong>50.1471133N, 14.1166058E</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="kontakt-map" data-r>
+        <iframe
+          src="https://maps.google.com/maps?q=Hu%C5%A5sk%C3%A1+370%2C+Kladno&output=embed"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Autoservis Automikas"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="napiste" style="background:var(--dark);">
+  <div class="container">
+    <div class="kontakt-grid">
+      <div data-r>
+        <div class="section-label">Napište nám</div>
+        <h2>Pošlete nám zprávu</h2>
+        <p class="section-desc" style="margin-bottom:1.5rem;">Vyplňte prosím pole označená hvězdičkou a zanechte na sebe kontakt, abychom mohli na vaši zprávu reagovat.</p>
+        <form class="form-card" onsubmit="return false;">
+          <div class="form-row"><label>Jméno <span class="req">*</span></label><input type="text" name="jmeno" placeholder="Vaše jméno" required></div>
+          <div class="form-row"><label>E-mail</label><input type="email" name="email" placeholder="vas@email.cz"></div>
+          <div class="form-row"><label>Telefon</label><input type="tel" name="telefon" placeholder="+420"></div>
+          <div class="form-row"><label>Zpráva <span class="req">*</span></label><textarea name="zprava" placeholder="S čím vám můžeme pomoci?" required></textarea></div>
+          <button type="submit" class="btn btn--fill">Odeslat zprávu</button>
+          <p class="form-note">Ukázkový formulář – ve finálním webu zprávy chodí přímo na e-mail servisu.</p>
+        </form>
+      </div>
+      <div data-r>
+        <div class="section-label">Oblast působnosti</div>
+        <h2>Kam jezdíme</h2>
+        <div class="area-box" style="margin-top:1.25rem;">
+          <h3>Kladno a okolní regiony</h3>
+          <p class="area-lead">Naše služby nabízíme zákazníkům z Kladna a desítek obcí v okolí:</p>
+          <div class="area-tags"><span class="primary">Kladno</span><span class="primary">Slaný</span><span class="primary">Unhošť</span><span class="primary">Stochov</span><span class="primary">Buštěhrad</span><span class="primary">Libušín</span><span class="primary">Lidice</span><span class="primary">Velvary</span><span class="primary">Lány</span></div>
+          <p class="area-lead" style="margin-top:1.25rem;margin-bottom:0;font-size:.86rem;">a dále: Běleč, Běloky, Beřovice, Bílichov, Blevice, Brandýsek, Braškov, Bratronice, Cvrčovice, Černuc, Doksy, Dolany, Drnek, Družec, Dřetovice, Dřínov, Hobšovice, Horní Bezděkov, Hořešovice, Hospozín, Hostouň, Hradečno, Hrdlív, Hřebeč, Jemníky, Kačice, Kamenné Žehrovice, Kamenný Most, Klobuky, Knovíz, Koleč, Kvílice, Kyšice, Ledce, Lhota, Libochovičky, Malé Přítočno, Makotřasy, Neuměřice, Otvovice, Pchery, Pletený Újezd, Podlešín, Smečno, Stehelčeves, Stradonice, Svinařov, Třebichovice, Třebusice, Tuchlovice, Tuřany, Velká Dobrá, Velké Přítočno, Vinařice, Zákolany, Zvoleněves, Želenice, Žilina, Žižice a další.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">🔧 <span>Autoservis Automikas</span></div>
+        <p>Nezávislá autoopravna v Kladně od roku 1994. Servis vozů všech značek, člen EURO KONCEPT.<br>Huťská 370, 272 01 Kladno</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="bazar.html">Bazar</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+420 608 103 999">+420 608 103 999</a></li>
+          <li><a href="mailto:info@automikas.cz">info@automikas.cz</a></li>
+          <li>Huťská 370, Kladno</li>
+          <li>Po–Pá 8:00–12:00 · 13:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Autoservis Automikas · Všechna práva vyhrazena</span>
+      <span>Web od <a href="https://strankyprovas.cz">StránkyProVás</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+  });
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+  const btn = document.getElementById('hamburgerBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); btn.setAttribute('aria-expanded', false);
+  }));
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

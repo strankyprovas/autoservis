@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bazar — Autoservis Automikas Kladno</title>
+  <meta name="description" content="Bazarové díly autoservisu Automikas Kladno: použité disky kol a pneu, výprodej dílů Škoda Favorit a Forman." />
+  <meta name="theme-color" content="#0b0c0e" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<header id="header">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🔧 <span>Autoservis Automikas</span></a>
+      <nav aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="bazar.html" class="active">Bazar</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="tel:+420 608 103 999" class="nav-phone">📞 Zavolat</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Úvod</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="bazar.html">Bazar</a>
+    <a href="index.html#galerie">Galerie</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="tel:+420 608 103 999">📞 +420 608 103 999</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Úvod</a> &nbsp;›&nbsp; Bazar</div>
+    <h1>Bazar</h1>
+    <p>Bazarové díly z naší nabídky. Nabídka se průběžně mění – ozvěte se nám a rádi prověříme aktuální dostupnost.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="bazar-grid">
+      <div class="bazar-card" data-r>
+        <div class="bazar-img"><img src="../stock_photos/photo_3.jpg" alt="Použité disky kol a pneumatiky" loading="lazy" /></div>
+        <div class="bazar-body">
+          <span class="sluzba-tag">Bazarové díly</span>
+          <h3>Použité disky kol + pneu</h3>
+          <p>Zachovalé použité disky kol a pneumatiky z naší nabídky. Aktuální rozměry a stav rádi sdělíme telefonicky.</p>
+        </div>
+      </div>
+      <div class="bazar-card" data-r>
+        <div class="bazar-img"><img src="../stock_photos/photo_1.jpg" alt="Výprodej dílů Škoda Favorit a Forman" loading="lazy" /></div>
+        <div class="bazar-body">
+          <span class="sluzba-tag">Výprodej</span>
+          <h3>Díly Škoda Favorit, Forman</h3>
+          <p>Výprodej náhradních dílů na vozy Škoda Favorit a Forman. Ptejte se na konkrétní díly, které potřebujete.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bazar-note" data-r>
+      <strong>Hledáte konkrétní díl?</strong> Bazarová nabídka se průběžně mění. Aktuální dostupnost a ceny vám rádi sdělíme na telefonu
+      <a href="tel:+420 608 103 999" style="color:var(--orange)">+420 608 103 999</a> nebo e-mailem
+      <a href="mailto:info@automikas.cz" style="color:var(--orange)">info@automikas.cz</a>.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">🔧 <span>Autoservis Automikas</span></div>
+        <p>Nezávislá autoopravna v Kladně od roku 1994. Servis vozů všech značek, člen EURO KONCEPT.<br>Huťská 370, 272 01 Kladno</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigace</h4>
+        <ul>
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="sluzby.html">Služby</a></li>
+          <li><a href="bazar.html">Bazar</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+420 608 103 999">+420 608 103 999</a></li>
+          <li><a href="mailto:info@automikas.cz">info@automikas.cz</a></li>
+          <li>Huťská 370, Kladno</li>
+          <li>Po–Pá 8:00–12:00 · 13:00–17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Autoservis Automikas · Všechna práva vyhrazena</span>
+      <span>Web od <a href="https://strankyprovas.cz">StránkyProVás</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+  });
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+  const btn = document.getElementById('hamburgerBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); btn.setAttribute('aria-expanded', false);
+  }));
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
