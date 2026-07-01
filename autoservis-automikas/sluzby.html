@@ -7,30 +7,43 @@
   <meta name="description" content="Kompletní přehled služeb autoservisu Automikas Kladno: údržba a opravy motorů, diagnostika, palivové soustavy a vstřikovače, podvozek a geometrie, karoserie po havárii, klimatizace, pneuservis, odtahová služba, tažná zařízení." />
   <meta name="theme-color" content="#0b0c0e" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div id="progress"></div>
 
-<header id="header">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><span class="logo-mark">🔧</span> AUTO<span>MIKAS</span></a>
-      <nav aria-label="Hlavní navigace">
-        <ul>
-          <li><a href="index.html">Úvod</a></li>
-          <li><a href="sluzby.html" class="active">Služby</a></li>
-          <li><a href="bazar.html">Bazar</a></li>
-          <li><a href="index.html#galerie">Galerie</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+<div class="topbar">
+  <div class="container-wide">
+    <div class="topbar-left">
+      <span class="topbar-item open"><span class="dot"></span>Otevřeno · Po–Pá 8:00–17:00</span>
+      <span class="topbar-item"><span class="ic">📍</span>Huťská 370, Kladno</span>
+    </div>
+    <div class="topbar-right">
+      <span class="chip">Člen EURO KONCEPT</span>
+      <a href="mailto:info@automikas.cz" class="topbar-item email"><span class="ic">✉️</span>info@automikas.cz</a>
+      <a href="tel:+420608103899" class="topbar-item"><span class="ic">📞</span>+420 608 103 899</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="nav" id="nav">
+    <div class="container-wide">
+      <a href="index.html" class="brand">
+        <span class="emblem">AM</span>
+        <span class="wordmark">AUTO<span>MIKAS</span><small>Autoservis Kladno</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Hlavní navigace">
+        <a href="index.html">Úvod</a>
+        <a href="sluzby.html" class="active">Služby</a>
+        <a href="bazar.html">Bazar</a>
+        <a href="index.html#galerie">Galerie</a>
+        <a href="kontakt.html">Kontakt</a>
       </nav>
       <div class="nav-cta">
         <a href="tel:+420608103899" class="nav-phone">📞 608 103 899</a>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </div>
@@ -40,7 +53,7 @@
     <a href="bazar.html">Bazar</a>
     <a href="index.html#galerie">Galerie</a>
     <a href="kontakt.html">Kontakt</a>
-    <a href="tel:+420 608 103 899">📞 +420 608 103 899</a>
+    <a href="tel:+420608103899">📞 +420 608 103 899</a>
   </div>
 </header>
 
@@ -207,7 +220,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="nav-logo"><span class="logo-mark">🔧</span> AUTO<span>MIKAS</span></div>
+        <a href="index.html" class="brand"><span class="emblem">AM</span><span class="wordmark">AUTO<span>MIKAS</span><small>Autoservis Kladno</small></span></a>
         <p>Nezávislá autoopravna v Kladně od roku 1994. Servis vozů všech značek, člen EURO KONCEPT.<br>Huťská 370, 272 01 Kladno</p>
       </div>
       <div class="footer-col">
@@ -244,8 +257,8 @@
     const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
     document.getElementById('progress').style.width = pct + '%';
   });
-  const header = document.getElementById('header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
   window.addEventListener('scroll', onScroll); onScroll();
   const btn = document.getElementById('hamburgerBtn');
   const menu = document.getElementById('mobileMenu');
