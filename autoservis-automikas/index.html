@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Autoservis Automikas — servis vozů všech značek, Kladno</title>
   <meta name="description" content="Nezávislá autoopravna v Kladně od roku 1994. Servis osobních a dodávkových vozů všech značek – diagnostika, motory, podvozek, karoserie, pneuservis, STK i dekarbonizace. Člen EURO KONCEPT." />
-  <meta name="theme-color" content="#0b0c0e" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,10 +18,10 @@
 <header id="header">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">🔧 <span>Autoservis Automikas</span></a>
+      <a href="index.html" class="nav-logo"><span class="logo-mark">🔧</span> AUTO<span>MIKAS</span></a>
       <nav aria-label="Hlavní navigace">
         <ul>
-          <li><a href="index.html" class="active">Úvod</a></li>
+          <li><a href="index.html">Úvod</a></li>
           <li><a href="sluzby.html">Služby</a></li>
           <li><a href="bazar.html">Bazar</a></li>
           <li><a href="index.html#galerie">Galerie</a></li>
@@ -29,7 +29,7 @@
         </ul>
       </nav>
       <div class="nav-cta">
-        <a href="tel:+420 608 103 899" class="nav-phone">📞 Zavolat</a>
+        <a href="tel:+420608103899" class="nav-phone">📞 608 103 899</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Otevřít menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -42,74 +42,62 @@
     <a href="bazar.html">Bazar</a>
     <a href="index.html#galerie">Galerie</a>
     <a href="kontakt.html">Kontakt</a>
-    <a href="tel:+420 608 103 899">📞 +420 608 103 899</a>
+    <a href="tel:+420608103899">📞 +420 608 103 899</a>
   </div>
 </header>
 
 <!-- ===== HERO ===== -->
 <section id="hero">
+  <div class="hero-bg">
+    <img src="photos/photo_1.jpg" alt="Autoservis Automikas – dílna" />
+  </div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-est">Est. 1994 · Kladno</div>
   <div class="container">
-    <div class="hero-grid">
-      <div class="hero-text" data-r>
-        <div class="hero-badge">Kladno · od roku 1994</div>
-        <h1 class="hero-title">
-          Vaše auto v dobrých rukou<br>
-          <em>Autoservis Automikas</em>
-        </h1>
-        <p class="hero-sub">Nezávislá autoopravna v Kladně. Servis osobních a dodávkových vozů všech značek – komplexní služba na klíč, abyste se nemuseli starat o nic na cestách.</p>
-        <div class="hero-actions">
-          <a href="tel:+420 608 103 899" class="btn btn--fill">📞 Zavolat nyní</a>
-          <a href="#sluzby" class="btn btn--outline">Naše služby ↓</a>
-        </div>
-        <div class="hero-rating">
-          <span class="stars">🔧</span>
-          <strong>Všechny značky</strong>
-          <span>· osobní i dodávkové vozy</span>
-        </div>
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="dot"></span>Nezávislá autoopravna · od roku 1994</div>
+      <h1 class="hero-title">Vaše auto<br>v <em>dobrých rukou</em></h1>
+      <p class="hero-sub">Servis osobních i dodávkových vozů <strong>všech značek</strong> v Kladně. Diagnostika, motory, podvozek, karoserie i STK – kompletní péče na klíč, abyste se nemuseli starat o nic na cestách.</p>
+      <div class="hero-actions">
+        <a href="tel:+420608103899" class="btn btn--fill">📞 Objednat vozidlo</a>
+        <a href="#sluzby" class="btn btn--outline">Naše služby</a>
       </div>
-      <div class="hero-visual" data-r>
-        <div class="visual-stack">
-          <div class="img-main">
-            <img src="../stock_photos/photo_1.jpg" alt="Autoservis Automikas – autoservis" loading="lazy" />
-          </div>
-          <div class="img-sub">
-            <img src="../stock_photos/photo_2.jpg" alt="Autoservis Automikas – dílna" loading="lazy" />
-          </div>
-          <div class="img-sub">
-            <img src="../stock_photos/photo_3.jpg" alt="Autoservis Automikas – vozidla" loading="lazy" />
-          </div>
-        </div>
-        <div class="visual-float">
-          <span class="pulse"></span>
-          <div>
-            <strong>Přijímáme zakázky</strong><br>
-            <span style="font-size:.78rem;color:var(--text-muted)">Kladno</span>
-          </div>
-        </div>
+      <div class="hero-trust">
+        <div class="t-item"><span class="t-ic">🏆</span><div><strong>30 let</strong>zkušeností</div></div>
+        <div class="t-item"><span class="t-ic">🔧</span><div><strong>Všechny značky</strong>osobní i dodávky</div></div>
+        <div class="t-item"><span class="t-ic">✔️</span><div><strong>EURO KONCEPT</strong>certifikovaný člen</div></div>
       </div>
     </div>
   </div>
+  <div class="scroll-cue"><span class="mouse"></span>Scroll</div>
 </section>
+
+<!-- ===== BRAND MARQUEE ===== -->
+<div class="brandbar" aria-hidden="true">
+  <div class="brand-track" id="brandTrack">
+    <span>Škoda</span><span>Volkswagen</span><span>Peugeot</span><span>Citroën</span><span>Ford</span><span>Renault</span><span>Opel</span><span>Toyota</span><span>Hyundai</span><span>Kia</span><span>Fiat</span><span>Mercedes</span>
+  </div>
+</div>
 
 <!-- ===== STATS ===== -->
 <section id="stats">
   <div class="container">
     <div class="stats-grid">
-      <div data-r>
-        <div class="stat-num" data-count="1994">0</div>
+      <div class="stat" data-r>
+        <div class="stat-num"><span data-count="1994">0</span></div>
         <div class="stat-label">Rok založení</div>
       </div>
-      <div data-r>
-        <div class="stat-num" data-count="30">0</div>
+      <div class="stat" data-r>
+        <div class="stat-num"><span data-count="30">0</span><span class="suf">+</span></div>
         <div class="stat-label">Let zkušeností</div>
       </div>
-      <div data-r>
-        <div class="stat-num">VŠE</div>
-        <div class="stat-label">Značky vozů</div>
+      <div class="stat" data-r>
+        <div class="stat-num"><span data-count="20">0</span><span class="suf">+</span></div>
+        <div class="stat-label">Odborných služeb</div>
       </div>
-      <div data-r>
-        <div class="stat-num" style="font-size:1.7rem;line-height:1.15;">EURO KONCEPT</div>
-        <div class="stat-label">Certifikovaný člen</div>
+      <div class="stat" data-r>
+        <div class="stat-num">VŠE<span class="suf">.</span></div>
+        <div class="stat-label">Značky vozů</div>
       </div>
     </div>
   </div>
@@ -119,29 +107,22 @@
 <section id="onas">
   <div class="container">
     <div class="onas-grid">
-      <div class="onas-img" data-r>
-        <img src="../stock_photos/photo_2.jpg" alt="Autoservis Automikas – servisní tým" loading="lazy" />
-        <div class="onas-img-badge">
-          <strong>1994</strong>
-          <span>na trhu</span>
-        </div>
+      <div class="onas-visual" data-r>
+        <div class="accent-line"></div>
+        <div class="frame"><img src="photos/photo_2.jpg" alt="Autoservis Automikas – servisní dílna" loading="lazy" /></div>
+        <div class="onas-badge"><strong>1994</strong><span>na trhu</span></div>
       </div>
       <div class="onas-text" data-r>
         <div class="section-label">O nás</div>
-        <h2>Nezávislá autoopravna v Kladně</h2>
-        <p>Firma Miroslav Strial – Automikas vznikla v roce 1994 a s několika změnami funguje na trhu dodnes. Naše sídlo najdete v ulici Huťská 370 v Kladně. Hlavním cílem je poskytnout zákazníkům komplexní službu na klíč a minimalizovat tak problémy na cestách.</p>
-        <p class="section-desc">Všichni naši pracovníci procházejí pravidelným proškolováním, které pro nás zajišťuje servisní projekt EURO KONCEPT, jehož jsme členem.</p>
-        <div class="onas-chips">
-          <span class="chip accent">🔧 Servis všech značek</span>
-          <span class="chip accent">🔍 Diagnostika</span>
-          <span class="chip accent">🚗 Karoserie</span>
-          <span class="chip accent">🛞 Pneuservis</span>
-          <span class="chip">📍 Huťská 370, Kladno</span>
-          <span class="chip">🚙 Bazar vozidel</span>
+        <h2>Nezávislá autoopravna<br>v srdci Kladna</h2>
+        <p>Firma <strong>Miroslav Strial – Automikas</strong> vznikla v roce 1994 a s několika změnami funguje na trhu dodnes. Naším cílem je poskytnout zákazníkům komplexní službu na klíč a minimalizovat starosti na cestách.</p>
+        <div class="feature-list">
+          <div class="feature-item"><span class="fi-ic">🎓</span><div class="fi-txt"><strong>Školený tým</strong><span>Pravidelné proškolování EURO KONCEPT</span></div></div>
+          <div class="feature-item"><span class="fi-ic">🛠️</span><div class="fi-txt"><strong>Vše na jednom místě</strong><span>Od údržby po opravy po havárii</span></div></div>
+          <div class="feature-item"><span class="fi-ic">🚗</span><div class="fi-txt"><strong>Náhradní vozidlo</strong><span>Zapůjčíme při opravě po nehodě</span></div></div>
+          <div class="feature-item"><span class="fi-ic">📍</span><div class="fi-txt"><strong>Huťská 370, Kladno</strong><span>Snadno dostupné, s parkováním</span></div></div>
         </div>
-        <div style="margin-top:2rem;">
-          <a href="tel:+420 608 103 899" class="btn btn--fill">Objednat vozidlo</a>
-        </div>
+        <a href="kontakt.html" class="btn btn--fill">Domluvit termín →</a>
       </div>
     </div>
   </div>
@@ -150,7 +131,8 @@
 <!-- ===== SLUŽBY ===== -->
 <section id="sluzby">
   <div class="container">
-    <div class="sluzby-header" data-r>
+    <div class="section-head center" data-r>
+      <div class="ghost-num" style="left:50%;transform:translateX(-50%);top:-5rem;">01</div>
       <div class="section-label">Naše služby</div>
       <h2>Co pro vás uděláme</h2>
       <p class="section-desc">Komplexní péče o osobní i dodávkové vozy všech značek na jednom místě – od běžné údržby přes diagnostiku až po opravy po havárii.</p>
@@ -166,95 +148,84 @@
     <div class="sluzby-grid" id="sluzbyGrid">
 
       <div class="sluzba-card" data-cat="elektro" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
-          <h3>Autoelektrika a diagnostika</h3>
-          <p>Čtení paměti závad řídicích jednotek, osciloskopické zjišťování funkčnosti snímačů a kontrola průběhů jednotlivých částí motoru.</p>
-        </div>
+        <span class="sluzba-idx">01</span>
+        <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
+        <h3>Autoelektrika a diagnostika</h3>
+        <p>Čtení paměti závad řídicích jednotek, osciloskopické zjišťování funkčnosti snímačů a kontrola průběhů jednotlivých částí motoru.</p>
       </div>
 
       <div class="sluzba-card" data-cat="elektro" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
-          <h3>Alternátory a startéry</h3>
-          <p>Diagnostika alternátorů – i řízených řídicí jednotkou – přímo na vozidle, test komponentů po rozebrání, testování a opravy startérů.</p>
-        </div>
+        <span class="sluzba-idx">02</span>
+        <span class="sluzba-tag">Elektrika &amp; diagnostika</span>
+        <h3>Alternátory a startéry</h3>
+        <p>Diagnostika alternátorů – i řízených řídicí jednotkou – přímo na vozidle, test komponentů po rozebrání, testování a opravy startérů.</p>
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Servis &amp; motory</span>
-          <h3>Pravidelná údržba vozidel</h3>
-          <p>Údržba dle plánu výrobce vč. rozvodových řemenů, na nastavení vlastníme speciální přípravky. Výměna oleje i v automatických převodovkách.</p>
-        </div>
+        <span class="sluzba-idx">03</span>
+        <span class="sluzba-tag">Servis &amp; motory</span>
+        <h3>Pravidelná údržba vozidel</h3>
+        <p>Údržba dle plánu výrobce vč. rozvodových řemenů, na nastavení vlastníme speciální přípravky. Výměna oleje i v automatických převodovkách.</p>
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Servis &amp; motory</span>
-          <h3>Opravy a seřízení motorů</h3>
-          <p>Diagnostika, opravy a seřízení motorů, generální opravy motorů i agregátů, testy a čištění vstřikovačů.</p>
-        </div>
+        <span class="sluzba-idx">04</span>
+        <span class="sluzba-tag">Servis &amp; motory</span>
+        <h3>Opravy a seřízení motorů</h3>
+        <p>Diagnostika, opravy a seřízení motorů, generální opravy motorů i agregátů, testy a čištění vstřikovačů.</p>
       </div>
 
       <div class="sluzba-card" data-cat="podvozek" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Podvozek</span>
-          <h3>Podvozek a geometrie</h3>
-          <p>Opravy řízení, zavěšení kol a zadních náprav, kontrola a výměna brzdové kapaliny, měření a nastavení geometrie.</p>
-        </div>
+        <span class="sluzba-idx">05</span>
+        <span class="sluzba-tag">Podvozek</span>
+        <h3>Podvozek a geometrie</h3>
+        <p>Opravy řízení, zavěšení kol a zadních náprav, kontrola a výměna brzdové kapaliny, měření a nastavení geometrie.</p>
       </div>
 
       <div class="sluzba-card" data-cat="podvozek" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Podvozek</span>
-          <h3>Nápravy PEUGEOT &amp; CITROËN</h3>
-          <p>Generální opravy zadních náprav vozů Peugeot a Citroën – specializace, se kterou si poradíme tam, kde jinde nestačí.</p>
-        </div>
+        <span class="sluzba-idx">06</span>
+        <span class="sluzba-tag">Podvozek</span>
+        <h3>Nápravy PEUGEOT &amp; CITROËN</h3>
+        <p>Generální opravy zadních náprav vozů Peugeot a Citroën – specializace, se kterou si poradíme tam, kde jinde nestačí.</p>
       </div>
 
       <div class="sluzba-card" data-cat="karos" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Karoserie</span>
-          <h3>Opravy po havárii</h3>
-          <p>Karosářské opravy na rovnacím rámu CELETE, originální i kvalitní alternativní díly. Zdarma vyřídíme pojistnou událost a zapůjčíme náhradní vozidlo.</p>
-        </div>
+        <span class="sluzba-idx">07</span>
+        <span class="sluzba-tag">Karoserie</span>
+        <h3>Opravy po havárii</h3>
+        <p>Karosářské opravy na rovnacím rámu CELETE, originální i kvalitní alternativní díly. Zdarma vyřídíme pojistnou událost a zapůjčíme náhradní vozidlo.</p>
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Servis &amp; motory</span>
-          <h3>Příprava a provedení STK a emisí</h3>
-          <p>Připravíme vozidlo a kompletně zajistíme provedení STK i měření emisí – odpadne vám starost i zařizování.</p>
-        </div>
+        <span class="sluzba-idx">08</span>
+        <span class="sluzba-tag">Servis &amp; motory</span>
+        <h3>Příprava a provedení STK a emisí</h3>
+        <p>Připravíme vozidlo a kompletně zajistíme provedení STK i měření emisí – odpadne vám starost i zařizování.</p>
       </div>
 
       <div class="sluzba-card" data-cat="pneu" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Pneu &amp; klima</span>
-          <h3>Pneuservis a klimatizace</h3>
-          <p>Přezutí, vyvážení a opravy kol, rovnací stolice. Servis, plnění a čištění klimatizace pro pohodlnou jízdu po celý rok.</p>
-        </div>
+        <span class="sluzba-idx">09</span>
+        <span class="sluzba-tag">Pneu &amp; klima</span>
+        <h3>Pneuservis a klimatizace</h3>
+        <p>Přezutí, vyvážení a opravy kol, rovnací stolice. Servis, plnění a čištění klimatizace pro pohodlnou jízdu po celý rok.</p>
       </div>
 
       <div class="sluzba-card" data-cat="motor" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Servis &amp; motory</span>
-          <h3>Dekarbonizace motoru</h3>
-          <p>Originální francouzský patent – dekarbonizace vodíkem odstraní karbonové usazeniny a prodlouží životnost motoru. Vhodné pro všechny typy vozidel.</p>
-        </div>
+        <span class="sluzba-idx">10</span>
+        <span class="sluzba-tag">Servis &amp; motory</span>
+        <h3>Dekarbonizace motoru</h3>
+        <p>Originální francouzský patent – dekarbonizace vodíkem odstraní karbonové usazeniny a prodlouží životnost motoru. Vhodné pro všechny typy vozidel.</p>
       </div>
 
       <div class="sluzba-card" data-cat="karos" data-r>
-        <div class="sluzba-body">
-          <span class="sluzba-tag">Karoserie</span>
-          <h3>Tažná zařízení</h3>
-          <p>Prodej a montáž tažných zařízení včetně veškerého příslušenství – ať už na vozík, nosič kol, nebo přívěs.</p>
-        </div>
+        <span class="sluzba-idx">11</span>
+        <span class="sluzba-tag">Karoserie</span>
+        <h3>Tažná zařízení</h3>
+        <p>Prodej a montáž tažných zařízení včetně veškerého příslušenství – ať už na vozík, nosič kol, nebo přívěs.</p>
       </div>
 
     </div>
-    <div style="text-align:center;margin-top:2.5rem;" data-r>
+    <div style="text-align:center;margin-top:3rem;" data-r>
       <a href="sluzby.html" class="btn btn--fill">Všechny služby podrobně →</a>
     </div>
   </div>
@@ -263,7 +234,8 @@
 <!-- ===== GALERIE ===== -->
 <section id="galerie">
   <div class="container">
-    <div class="galerie-header" data-r>
+    <div class="section-head" data-r>
+      <div class="ghost-num">02</div>
       <div class="section-label">Galerie</div>
       <h2>Naše dílna a práce</h2>
     </div>
@@ -278,10 +250,10 @@
 <!-- ===== RECENZE ===== -->
 <section id="recenze">
   <div class="container">
-    <div class="recenze-header" data-r>
+    <div class="section-head center" data-r>
       <div class="section-label">Recenze zákazníků</div>
       <h2>Co říkají naši zákazníci</h2>
-      <p class="section-desc" style="margin:.5rem auto 0;">Spokojenost zákazníků z Kladna a okolí je pro nás tou nejlepší vizitkou.</p>
+      <p class="section-desc">Spokojenost zákazníků z Kladna a okolí je pro nás tou nejlepší vizitkou.</p>
     </div>
     <div class="slider" data-r>
       <div class="slider-track" id="sliderTrack">
@@ -289,34 +261,34 @@
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">„Skvělý servis, rychlá a kvalitní práce. Auto opravili přesně dle domluvy a za rozumnou cenu. Rozhodně doporučuji!"</p>
-            <div class="review-author">— Tomáš K. · Google</div>
+            <div class="review-author">Tomáš K. <span>· Google</span></div>
           </div>
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">„Přezutí kol hotové do půl hodiny, personál příjemný a ochotný. Cena odpovídá kvalitě. Budu se vracet každou sezónu."</p>
-            <div class="review-author">— Martin S. · Google</div>
+            <div class="review-author">Martin S. <span>· Google</span></div>
           </div>
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">„Opravili mi auto po nehodě – výsledek byl skvělý, ani by neřekl, že tam něco bylo. Profi přístup a férová cena."</p>
-            <div class="review-author">— Petr N. · Google</div>
+            <div class="review-author">Petr N. <span>· Google</span></div>
           </div>
         </div>
         <div class="review-slide">
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">„Diagnostika odhalila závadu, kterou jiný servis přehlédl. Rychlá oprava, auto jede skvěle. Moc děkuji za profesionální přístup."</p>
-            <div class="review-author">— Jakub V. · Google</div>
+            <div class="review-author">Jakub V. <span>· Google</span></div>
           </div>
           <div class="review-card">
             <div class="review-stars">★★★★☆</div>
             <p class="review-text">„Pravidelně sem jezdím na servis – vždy spokojen. Poctivá práce, férové ceny a ochotný personál. Doporučuji všem v okolí."</p>
-            <div class="review-author">— Ondřej M. · Google</div>
+            <div class="review-author">Ondřej M. <span>· Google</span></div>
           </div>
           <div class="review-card">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">„Výměna brzd provedena rychle a kvalitně. Cena byla nižší než u konkurence. Opravdu solidní servis, vrátím se."</p>
-            <div class="review-author">— David B. · Google</div>
+            <div class="review-author">David B. <span>· Google</span></div>
           </div>
         </div>
       </div>
@@ -330,20 +302,16 @@
 
 <!-- ===== CTA ===== -->
 <section id="cta">
-  <div class="container">
-    <div class="cta-grid">
-      <div class="cta-text" data-r>
-        <div class="section-label">Objednávky</div>
-        <h2>Objednejte své vozidlo ještě dnes</h2>
-        <p>Neodkládejte servis svého auta. Zavolejte nebo přijeďte přímo k nám do Kladna – postaráme se o vůz jakékoliv značky rychle a spolehlivě.</p>
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="tel:+420 608 103 899" class="btn btn--fill">📞 Zavolat nyní</a>
-          <a href="#kontakt" class="btn btn--outline">Kde nás najdete</a>
-        </div>
-      </div>
-      <div class="cta-img" data-r>
-        <img src="../stock_photos/photo_1.jpg" alt="Objednejte servis – Autoservis Automikas" loading="lazy" />
-      </div>
+  <div class="cta-inner" data-r>
+    <div class="cta-text">
+      <div class="section-label">Objednávky</div>
+      <h2>Objednejte své vozidlo ještě dnes</h2>
+      <p>Neodkládejte servis svého auta. Zavolejte nebo přijeďte přímo k nám do Kladna – postaráme se o vůz jakékoliv značky rychle a spolehlivě.</p>
+      <a href="kontakt.html" class="btn btn--outline">Kde nás najdete →</a>
+    </div>
+    <div class="cta-phone">
+      <small>Zavolejte nám</small>
+      <a href="tel:+420608103899">608 103 899</a>
     </div>
   </div>
 </section>
@@ -355,35 +323,23 @@
       <div class="kontakt-info" data-r>
         <div class="section-label">Kontakt</div>
         <h2>Najdete nás v Kladně</h2>
-        <p>Rádi přijmeme vaše vozidlo. Zavolejte nebo přijeďte přímo k nám.</p>
+        <p>Rádi přijmeme vaše vozidlo. Zavolejte nebo přijeďte přímo k nám do dílny.</p>
         <div class="kontakt-items">
           <div class="kontakt-item">
             <div class="kontakt-icon">📍</div>
-            <div class="kontakt-item-text">
-              <small>Adresa</small>
-              <strong>Huťská 370, 272 01 Kladno</strong>
-            </div>
+            <div class="kontakt-item-text"><small>Adresa</small><strong>Huťská 370, 272 01 Kladno</strong></div>
           </div>
           <div class="kontakt-item">
             <div class="kontakt-icon">📞</div>
-            <div class="kontakt-item-text">
-              <small>Telefon</small>
-              <strong><a href="tel:+420 608 103 899">+420 608 103 899</a></strong>
-            </div>
+            <div class="kontakt-item-text"><small>Telefon</small><strong><a href="tel:+420608103899">+420 608 103 899</a></strong></div>
           </div>
           <div class="kontakt-item">
             <div class="kontakt-icon">✉️</div>
-            <div class="kontakt-item-text">
-              <small>Email</small>
-              <strong><a href="mailto:info@automikas.cz">info@automikas.cz</a></strong>
-            </div>
+            <div class="kontakt-item-text"><small>Email</small><strong><a href="mailto:info@automikas.cz">info@automikas.cz</a></strong></div>
           </div>
           <div class="kontakt-item">
             <div class="kontakt-icon">🕐</div>
-            <div class="kontakt-item-text">
-              <small>Otevírací doba</small>
-              <strong>Po–Pá 8:00–12:00 · 13:00–17:00</strong>
-            </div>
+            <div class="kontakt-item-text"><small>Otevírací doba</small><strong>Po–Pá 8:00–12:00 · 13:00–17:00</strong></div>
           </div>
         </div>
       </div>
@@ -392,8 +348,7 @@
           src="https://maps.google.com/maps?q=Hu%C5%A5sk%C3%A1+370%2C+Kladno&output=embed"
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa Autoservis Automikas"
-        ></iframe>
+          title="Mapa Autoservis Automikas"></iframe>
       </div>
     </div>
   </div>
@@ -404,7 +359,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="nav-logo">🔧 <span>Autoservis Automikas</span></div>
+        <div class="nav-logo"><span class="logo-mark">🔧</span> AUTO<span>MIKAS</span></div>
         <p>Nezávislá autoopravna v Kladně od roku 1994. Servis vozů všech značek, člen EURO KONCEPT.<br>Huťská 370, 272 01 Kladno</p>
       </div>
       <div class="footer-col">
@@ -420,18 +375,21 @@
       <div class="footer-col">
         <h4>Kontakt</h4>
         <ul>
-          <li><a href="tel:+420 608 103 899">+420 608 103 899</a></li>
+          <li><a href="tel:+420608103899">+420 608 103 899</a></li>
           <li><a href="mailto:info@automikas.cz">info@automikas.cz</a></li>
-          <li>Huťská 370</li>
+          <li>Huťská 370, Kladno</li>
+          <li>Po–Pá 8:00–17:00</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Autoservis Automikas · Všechna práva vyhrazena</span>
+      <span>© 2026 Autoservis Automikas · Všechna práva vyhrazena</span>
       <span>Web od <a href="https://strankyprovas.cz">StránkyProVás</a></span>
     </div>
   </div>
 </footer>
+
+<a href="tel:+420608103899" class="float-call" aria-label="Zavolat">📞</a>
 
 <!-- ===== JAVASCRIPT ===== -->
 <script>
@@ -443,7 +401,8 @@
 
   /* Sticky header */
   const header = document.getElementById('header');
-  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+  window.addEventListener('scroll', onScroll); onScroll();
 
   /* Hamburger */
   const btn = document.getElementById('hamburgerBtn');
@@ -453,14 +412,13 @@
     btn.setAttribute('aria-expanded', open);
   });
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    menu.classList.remove('open');
-    btn.setAttribute('aria-expanded', false);
+    menu.classList.remove('open'); btn.setAttribute('aria-expanded', false);
   }));
 
   /* Reveal on scroll */
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.12 });
   document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
 
   /* Stats counter */
@@ -469,19 +427,21 @@
       if (!e.isIntersecting) return;
       const el = e.target;
       const target = parseFloat(el.dataset.count);
-      const isDecimal = 'decimal' in el.dataset;
-      const steps = 1400 / 16;
-      let current = 0;
-      const inc = target / steps;
+      const steps = 1300 / 16;
+      let current = 0; const inc = target / steps;
       const timer = setInterval(() => {
         current = Math.min(current + inc, target);
-        el.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+        el.textContent = Math.floor(current);
         if (current >= target) clearInterval(timer);
       }, 16);
       statsObs.unobserve(el);
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.6 });
   document.querySelectorAll('[data-count]').forEach(el => statsObs.observe(el));
+
+  /* Brand marquee — duplicate for seamless loop */
+  const bt = document.getElementById('brandTrack');
+  if (bt) bt.innerHTML += bt.innerHTML;
 
   /* Filtr služeb */
   document.querySelectorAll('.filter-btn').forEach(b => {
@@ -496,24 +456,14 @@
   });
 
   /* Galerie marquee */
-  const photos = ['../stock_photos/photo_1.jpg','../stock_photos/photo_2.jpg','../stock_photos/photo_3.jpg','../stock_photos/photo_4.jpg','../stock_photos/photo_5.jpg'];
+  const photos = ['photos/photo_1.jpg','photos/photo_2.jpg','photos/photo_3.jpg','photos/photo_4.jpg','photos/photo_5.jpg'];
   const track = document.getElementById('marqueeTrack');
-  if (photos.length > 0 && photos[0]) {
-    [...photos, ...photos].forEach(src => {
-      const div = document.createElement('div');
-      div.className = 'gal-img';
-      div.innerHTML = `<img src="${src}" alt="Autoservis Autoservis Automikas" loading="lazy" />`;
-      track.appendChild(div);
-    });
-    if (photos.length < 4) track.style.animationDuration = '20s';
-  } else {
-    ['photo_1.jpg','photo_2.jpg','photo_3.jpg','photo_1.jpg','photo_2.jpg'].forEach(src => {
-      const div = document.createElement('div');
-      div.className = 'gal-img';
-      div.innerHTML = `<img src="photos/${src}" alt="Autoservis" loading="lazy" />`;
-      track.appendChild(div);
-    });
-  }
+  [...photos, ...photos].forEach(src => {
+    const div = document.createElement('div');
+    div.className = 'gal-img';
+    div.innerHTML = `<img src="${src}" alt="Autoservis Automikas – galerie" loading="lazy" />`;
+    track.appendChild(div);
+  });
 
   /* Recenze slider */
   const sliderTrack = document.getElementById('sliderTrack');
@@ -526,7 +476,7 @@
     dots.querySelectorAll('.dot-btn').forEach((d, i) => d.classList.toggle('active', i === idx));
   }
   dots.querySelectorAll('.dot-btn').forEach((d, i) => d.addEventListener('click', () => goTo(i)));
-  if (slides.length > 1) setInterval(() => goTo((current + 1) % slides.length), 5000);
+  if (slides.length > 1) setInterval(() => goTo((current + 1) % slides.length), 5500);
 </script>
 
 </body>
