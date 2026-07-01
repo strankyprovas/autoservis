@@ -46,7 +46,7 @@ body::after {
 }
 
 /* ============ TYPOGRAPHY ============ */
-h1, h2 { font-family: 'Anton', 'Barlow Condensed', sans-serif; font-weight: 400; line-height: .96; text-transform: uppercase; letter-spacing: .012em; color: var(--text); }
+h1, h2 { font-family: 'Anton', 'Barlow Condensed', sans-serif; font-weight: 400; line-height: 1.12; text-transform: uppercase; letter-spacing: .012em; color: var(--text); }
 h3, h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; line-height: 1.05; text-transform: uppercase; letter-spacing: .01em; color: var(--text); }
 h1 { font-size: clamp(3rem, 8.5vw, 7rem); }
 h2 { font-size: clamp(2.3rem, 5.5vw, 4.4rem); }
