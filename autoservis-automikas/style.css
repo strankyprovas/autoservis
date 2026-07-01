@@ -198,14 +198,14 @@ header { position: sticky; top: 0; z-index: 100; }
 /* gauge card */
 .gauge-card { justify-self: end; width: 100%; max-width: 340px; background: linear-gradient(180deg, rgba(20,22,28,.92), rgba(12,13,17,.92)); border: 1px solid var(--border-2); border-radius: 22px; padding: 2rem 1.8rem 1.6rem; box-shadow: var(--shadow); backdrop-filter: blur(12px); position: relative; overflow: hidden; }
 .gauge-card::before { content: ''; position: absolute; top: -50%; left: -20%; width: 140%; height: 100%; background: radial-gradient(circle, var(--red-glow), transparent 60%); opacity: .4; }
-.gauge-wrap { position: relative; width: 100%; aspect-ratio: 2 / 1.15; }
+.gauge-wrap { position: relative; width: 100%; aspect-ratio: 200 / 108; }
 .gauge-svg { width: 100%; height: 100%; overflow: visible; }
 .gauge-needle { transform-origin: 100px 100px; animation: sweep 2.6s var(--ease) .4s both; }
-@keyframes sweep { 0% { transform: rotate(-90deg);} 60% { transform: rotate(72deg);} 78% { transform: rotate(54deg);} 100% { transform: rotate(63deg);} }
-.gauge-center { position: absolute; top: 46%; left: 0; right: 0; text-align: center; }
-.gauge-center .big { font-family: 'Anton', sans-serif; font-size: 3.2rem; line-height: 1; color: #fff; }
-.gauge-center .big .plus { color: var(--red-2); }
-.gauge-center .sm { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; font-size: .82rem; color: var(--text-muted); margin-top: 4px; }
+@keyframes sweep { 0% { transform: rotate(-88deg);} 60% { transform: rotate(64deg);} 78% { transform: rotate(48deg);} 100% { transform: rotate(55deg);} }
+.gauge-value { text-align: center; margin-top: 2px; position: relative; z-index: 2; }
+.gauge-value .big { display: block; font-family: 'Anton', sans-serif; font-size: 3.1rem; line-height: 1; color: #fff; }
+.gauge-value .big .plus { color: var(--red-2); }
+.gauge-value .sm { display: block; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; font-size: .82rem; color: var(--text-muted); margin-top: 5px; }
 .gauge-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); position: relative; z-index: 2; }
 .gauge-foot .gf { text-align: center; flex: 1; }
 .gauge-foot .gf + .gf { border-left: 1px solid var(--border); }
